@@ -1,10 +1,10 @@
-# ⚡ Trading Intelligence Assistant
+# Trading Intelligence Assistant
 
 An autonomous, multi-agent financial intelligence and risk management platform orchestrated with **LangGraph**, **FastAPI**, **Streamlit**, and the **Model Context Protocol (MCP)**. Powered by local LLMs via **Ollama** and a **ChromaDB** RAG knowledge base.
 
 ---
 
-## 📌 Overview
+## Overview
 
 **Trading Intelligence Assistant** automates the preparation of comprehensive financial dossiers for Forex currency pairs and Equities. Rather than relying on a single prompt or monolithic LLM call, the platform coordinates specialized autonomous workers under a **Supervisor Agent** architecture.
 
@@ -17,7 +17,7 @@ The system performs:
 
 ---
 
-## 🏛️ System Architecture
+## System Architecture
 
 ```mermaid
 flowchart TD
@@ -54,7 +54,7 @@ flowchart TD
 
 ---
 
-## 🤖 Multi-Worker LangGraph Team
+## Multi-Worker LangGraph Team
 
 | Worker | Role | Key Capabilities & Tools |
 | :--- | :--- | :--- |
@@ -67,7 +67,7 @@ flowchart TD
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - **Decoupled Architecture**: FastMCP stdio server cleanly isolates external news scrapers from the agent core.
 - **Strict Risk Management**: Mathematical formulas prevent capital overexposure by automatically scaling lot sizes to pip distances or stock share stops.
@@ -78,7 +78,7 @@ flowchart TD
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```plaintext
 trading-intelligence-assistant/
@@ -116,7 +116,7 @@ trading-intelligence-assistant/
 
 ---
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 1. **Python 3.10+** (Tested on Python 3.10 - 3.12)
 2. **Ollama**: Download and install from [ollama.com](https://ollama.com/)
@@ -131,7 +131,7 @@ trading-intelligence-assistant/
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 1. **Clone the repository:**
    ```bash
@@ -162,7 +162,7 @@ trading-intelligence-assistant/
 
 ---
 
-## 🚦 Running the System
+## Running the System
 
 To run the complete platform, start both the **FastAPI backend** and the **Streamlit frontend**.
 
@@ -181,7 +181,7 @@ streamlit run streamlit_app.py
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
@@ -202,7 +202,7 @@ curl -X POST "http://127.0.0.1:8000/tasks/analyze" \
 
 ---
 
-## 📋 Sample Dossier Output
+## Sample Dossier Output
 
 When an analysis task completes, the agent team generates a structured report:
 
@@ -242,13 +242,13 @@ Rule 2: Never risk more than 2% of total portfolio equity on an unhedged positio
 
 ---
 
-## 🛡️ Risk & Compliance Disclaimer
+## Risk & Compliance Disclaimer
 
 > [!WARNING]
 > This software is intended strictly for educational, research, and informational purposes. It is **not** financial advice, investment advice, or a recommendation to buy or sell securities, currencies, or digital assets. Quantitative models and LLM-generated outputs can hallucinate or fail to predict market shifts. Always perform your own due diligence and consult a licensed financial advisor before risking capital.
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
